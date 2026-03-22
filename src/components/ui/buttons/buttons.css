@@ -1,5 +1,7 @@
 .navBarButton {
     display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
     background-color: white;
     color: #6E6F72;
     border-color: #FAFAFA;
@@ -37,4 +39,39 @@
 
 .transparent:hover{
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+.discountButton{
+    display: inline-block;
+    align-self: flex-start;
+    width: fit-content;
+    background-color: #0034F4;
+    border: 0px;
+    color: white;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 1rem;
+    padding: 14px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 52, 244, 0.4), 0 8px 20px rgba(0, 52, 244, 0.18);
+}
+
+.discountButton:hover{
+    background-color: #0035f4e8;
+}
+
+.buttonSlide {
+    width: var(--slide-nav-size, 3.75rem);
+    height: var(--slide-nav-size, 3.75rem);
+    min-width: var(--slide-nav-size, 3.75rem);
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 50%;
+    font-size: 42px;
+    cursor: pointer;
 }

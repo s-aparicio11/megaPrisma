@@ -1,8 +1,16 @@
 import type { ReactElement } from "react";
-import CatalogeCard from "./catalogeCard";
-import "./cataloge.css"
+import CatalogeCard, { type IconVariant } from "./catalogeCard";
+import "./cataloge.css";
 
-const catalogeInfo=[
+type CatalogeItem = {
+    key: number;
+    icon: string;
+    itemName: string;
+    numeroProductos: string;
+    color: IconVariant;
+};
+
+const catalogeInfo: CatalogeItem[] = [
     {
         key: 1,
         icon: "bi bi-pencil",
@@ -50,7 +58,7 @@ const catalogeInfo=[
 
 function Cataloge(): ReactElement{
     return(
-        <div className="cataloge">
+        <div id="catalogo" className="cataloge">
             <div>
                 <div className="titleCataloge">Catálogo</div>
                 <div className="infoCataloge">Explora nuestras categorías</div>
@@ -59,11 +67,13 @@ function Cataloge(): ReactElement{
             <div className="catalogeCards">
                 {catalogeInfo.map((item)=>{
                     return (
-                        <CatalogeCard key= {item.key} 
-                                    icon={item.icon} 
-                                    itemName={item.itemName} 
-                                    numeroProductos={item.numeroProductos}
-                                    color={item.color} />
+                        <CatalogeCard
+                            key={item.key}
+                            icon={item.icon}
+                            itemName={item.itemName}
+                            numeroProductos={item.numeroProductos}
+                            color={item.color}
+                        />
                     )
                 })}
             </div>

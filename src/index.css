@@ -2,6 +2,12 @@
   background-color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Evita que el header fijo tape el título al saltar a #anclas */
+  scroll-padding-top: 5rem;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;

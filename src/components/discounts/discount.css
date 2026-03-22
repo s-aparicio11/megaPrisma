@@ -1,0 +1,53 @@
+.discountBadge {
+        display: inline-flex;
+        align-self: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        color: #F2A53D;
+        padding: 8px;
+        background-color: rgba(242, 165, 61, 0.10);
+        border-radius: 30px;
+        font-family: "Inter", system-ui, sans-serif;
+}
+
+.discountSection{
+    background-color: #FAFAFA;
+    padding: 5% 10%;
+    box-sizing: border-box;
+}
+
+.discountCard{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 36px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.discountImg{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+}
+.discountInfo{
+    padding-top: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.discountTitle{
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.discountDesc{
+    color: #959393;
+}

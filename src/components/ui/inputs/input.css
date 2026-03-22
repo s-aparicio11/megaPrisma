@@ -1,0 +1,18 @@
+.inputContact{
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(218, 216, 216);
+    background-color: #ebebeb6c;
+}
+
+.inputContact:focus {
+    outline: none;
+    border-color: #0034f4;
+    box-shadow: 0 0 0 3px rgba(0, 52, 244, 0.25);
+}
+
+.inputContact::placeholder{
+    font-family: "Inter", system-ui, sans-serif;
+    color: rgb(170, 170, 170);
+    font-size: 1rem;
+}

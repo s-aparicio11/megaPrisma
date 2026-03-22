@@ -1,0 +1,148 @@
+.contactSection{
+    background-color: #f5f4f4;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contactDesc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px
+}
+
+.contactTitle{
+    color: #F2A53D;
+}
+
+.contactQuest{
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 2.5%;
+    border-radius: 16px;
+}
+
+.formPersonal{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Bloque “Mensaje” (hermano de .formPersonal): misma columna y ancho completo */
+.contactForm > div:not(.formPersonal) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.formPersonal > * {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.contactFormCards{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+    padding-top: 5%;
+}
+
+.contactFormCards > .contactForm {
+    flex: 2 1 0;
+    min-width: 0;
+}
+
+.contactFormCards > .contactCards {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    gap: 16px;
+    border-radius: 16px;
+}
+
+.contactIcon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 16px;
+    font-size: 24px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #E5EBFE;
+    color: blue;
+}
+.contactCards{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contactCardTitle{
+    font-weight: bold;
+}
+
+.contactCardContent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contactCardDesc{
+    color: rgb(129, 129, 129);
+    font-weight: 100;
+}
+
+.contactExtra{
+    font-size: 0.8rem;
+    color: rgb(159, 159, 159);
+}

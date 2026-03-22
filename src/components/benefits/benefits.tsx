@@ -6,13 +6,13 @@ const benefitsInfo=[
         key: 1,
         icon: "bi bi-truck",
         title: "Envío rápido",
-        description:"Despacho en 24-48 horas a todo el pais con seguimiento en tiempo real"
+        description:"Despacho en 24-48 horas a todo el pais con seguimiento en tiempo real."
     },
     {
         key: 2,
         icon: "bi bi-shield",
         title: "Calidad garantizada",
-        description: "Trabajamos con las mejores marcas del mercado. Garantía en cada compra"
+        description: "Trabajamos con las mejores marcas del mercado. Garantía en cada compra."
     },
     {
         key: 3,
@@ -24,13 +24,13 @@ const benefitsInfo=[
         key: 4,
         icon: "bi bi-headset",
         title: "Soporte 24/7",
-        description: "Equipo dedicado disponible para resolver tus dudas cuando lo necesites"
+        description: "Equipo dedicado disponible para resolver tus dudas cuando lo necesites."
     },
 ]
 
 function Benefits(): ReactElement{
     return(
-        <div className="benefits">
+        <div id="beneficios" className="benefits">
             <div>
                 <div className="titleBenefit">¿POR QUE ELEGIRNOS?</div>
                 <div className="megaPrismBen">
