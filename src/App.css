@@ -1,0 +1,116 @@
+.app {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* Altura aproximada del header fijo (logo + padding); ajusta si cambias el header */
+  padding-top: 4.75rem;
+}
+
+/* Mismo efecto que antes (10% a cada lado), solo para header y contenido “centrado” */
+.content-inset {
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 1rem;
+  padding: 0.75rem 10%;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.rightBar{
+  display: flex;
+  color: #6E6F72;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+
+.slideTitle {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.slideContent{
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255,255, 0.60);
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #0034F4;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  gap: 100px;
+}
+
+.slide > div:first-child {
+  flex: 1 1 0;
+  min-width: min(100%, 260px);
+}
+
+.slide > div:last-child {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgSlide {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+  border: 4px solid rgb( 255, 255, 255,0.50);
+}
+
+.slideInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.slideButtons{
+  display: flex;
+  gap: 20px;
+}
+
+.navBar{
+  display: flex;
+  gap: 16px;
+}
+
+.businessInfoSlide{
+  display: flex;
+  gap: 36px
+
+}

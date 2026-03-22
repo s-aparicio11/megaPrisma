@@ -1,0 +1,71 @@
+.cataloge {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cataloge > div:first-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+.titleCataloge{
+    color:#F2A53D
+}
+.infoCataloge{
+    color: black;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.descCataloge{
+    color: #959393;
+}
+
+.catalogeCard{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #FAFAFA;
+    border-radius: 16px;
+    gap: 16px;
+    transition: box-shadow 0.2s ease;
+}
+.catalogeCard:hover{
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.catalogeCard:hover .iconContainer{
+    transform: scale(1.12);
+}
+.iconContainer{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 16px;
+    font-size: 24px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+.itemsName{
+    font-weight: 600;
+}
+.numProducts{
+    color: #959393;
+}
+
+.catalogeCards{
+    padding-top: 3.5%;
+    width: 100%;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2vw, 28px);
+}
