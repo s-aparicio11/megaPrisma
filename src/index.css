@@ -11,4 +11,15 @@ html {
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+body.navMenuOpen {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: calc(3.5rem + 16px);
+  }
 }

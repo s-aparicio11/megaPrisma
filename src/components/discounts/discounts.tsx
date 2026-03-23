@@ -18,12 +18,13 @@ function Discounts(): ReactElement{
     return <div id="promociones" className="discountSection">
         {discountsInfo.map((info)=>{
             return(
-                <DiscountCard 
-                    badge={info.badge} 
-                    title= {info.title}
+                <DiscountCard
+                    key={info.key}
+                    badge={info.badge}
+                    title={info.title}
                     description={info.description}
-                    buttonText= {info.buttonText}
-                    imgSRC= {info.img}
+                    buttonText={info.buttonText}
+                    imgSRC={info.img}
                 />
             )
         })}

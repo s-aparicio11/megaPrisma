@@ -69,3 +69,28 @@
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: clamp(16px, 2vw, 28px);
 }
+
+@media (max-width: 768px) {
+  .cataloge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .infoCataloge {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem);
+  }
+
+  .catalogeCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .catalogeCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

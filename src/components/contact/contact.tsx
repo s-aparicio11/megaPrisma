@@ -8,7 +8,7 @@ const contactInfo=[
         key: 1,
         icon: "bi bi-telephone",
         title: "Teléfono",
-        content: "+57(1)234-5678",
+        content: "+57 322 397-8591",
         extraContent: "Lun-vie, 8am-6pm"
     },
     {
@@ -22,7 +22,7 @@ const contactInfo=[
         key:3,
         icon: "bi bi-geo-alt",
         title: "Ubicación",
-        content: "Bogotá, Colombia",
+        content: "Chia, Cundinamarca",
         extraContent: "Zona Industrial"
     }
 
@@ -41,10 +41,13 @@ function Contact(): ReactElement{
                         {
                             contactInfo.map((info)=>{
                                 return(
-                                    <ContactCard icon={info.icon} 
-                                                title={info.title} 
-                                                content={info.content} 
-                                                extraContent={info.extraContent}/>
+                                    <ContactCard
+                                        key={info.key}
+                                        icon={info.icon}
+                                        title={info.title}
+                                        content={info.content}
+                                        extraContent={info.extraContent}
+                                    />
                                 )
                             })
                         }

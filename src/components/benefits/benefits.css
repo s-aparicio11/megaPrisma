@@ -60,3 +60,19 @@
     text-align: center;
     gap: 16px;
 }
+
+@media (max-width: 768px) {
+  .benefits {
+    padding: 2.5rem 1rem;
+  }
+
+  .megaPrismBen {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem);
+  }
+
+  .benefitCards {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1.75rem;
+  }
+}

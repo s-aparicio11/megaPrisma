@@ -146,3 +146,27 @@
     font-size: 0.8rem;
     color: rgb(159, 159, 159);
 }
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 2.5rem 1rem;
+  }
+
+  .contactQuest {
+    font-size: clamp(1.25rem, 5vw, 1.65rem);
+  }
+
+  .contactFormCards {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .formPersonal {
+    flex-direction: column;
+  }
+
+  .contactForm {
+    padding: 1.25rem;
+  }
+}

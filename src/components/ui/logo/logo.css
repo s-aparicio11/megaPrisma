@@ -4,4 +4,13 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: min(84px, 22vw);
+    max-height: 4rem;
+    width: auto;
+  }
 }

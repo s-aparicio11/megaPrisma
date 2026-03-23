@@ -74,9 +74,9 @@ function Slide(): ReactElement{
                             <SlideBotton text={slide.buttonTwo} type="transparent" />
                         </div>
                         <div className="businessInfoSlide">
-                            <BusinessInfo numberString="5,000+" category="Productos" />
+                            <BusinessInfo numberString="2,000+" category="Productos" />
                             <BusinessInfo numberString="1,200+" category="Clientes" />
-                            <BusinessInfo numberString="15" category="Años" />
+                            <BusinessInfo numberString="10" category="Años" />
                         </div>
                     </div>
                 </div>

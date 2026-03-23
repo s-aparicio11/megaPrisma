@@ -43,9 +43,12 @@ function Benefits(): ReactElement{
                 {
                     benefitsInfo.map((benefit)=>{
                         return(
-                            <BenefitCard icon={benefit.icon} 
-                                        title= {benefit.title} 
-                                        description={benefit.description}/>
+                            <BenefitCard
+                                key={benefit.key}
+                                icon={benefit.icon}
+                                title={benefit.title}
+                                description={benefit.description}
+                            />
                         )
                     })
                 }
