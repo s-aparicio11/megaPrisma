@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import ContactForm from "./contactForm";
+// import ContactForm from "./contactForm";
 import ContactCard from "./contactCard";
 import "./contact.css"
 
@@ -35,8 +35,8 @@ function Contact(): ReactElement{
                     <div className="contactTitle">CONTACTO</div>
                     <div className="contactQuest">¿Tienes preguntas? Escríbenos</div>
                 </div>
-                <div className="contactFormCards">              
-                    <ContactForm />
+                <div className="contactFormCards">
+                    {/* <ContactForm /> */}
                     <div className="contactCards">
                         {
                             contactInfo.map((info)=>{
