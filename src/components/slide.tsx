@@ -15,7 +15,9 @@ const slides=[
         title: "Prepárate con los mejores útiles escolares",
         description: "Encuentra todo lo que necesitas para el nuevo año escolar: cuadernos, colores, mochilas y más con descuento especial.",
         buttonText: "Ver ofertas",
+        buttonHref: "#promociones",
         buttonTwo: "Ver Catálogo",
+        buttonTwoHref: "#catalogo",
         imageURL: regresoClaseImg,
     },
     {   key: 2,
@@ -24,7 +26,9 @@ const slides=[
         title: "Todo lo que necesitabas para crear, estudiar y trabajar",
         description: "Lápices, marcadores, cuadernos, impresiones, mucho más. Calidad premium a los mejores precios para tu oficina o escuela.",
         buttonText: "Ver Catálogo",
+        buttonHref: "#catalogo",
         buttonTwo: "Contáctanos",
+        buttonTwoHref: "#contacto",
         imageURL: aliadoImg,
     },
     {   key: 3,
@@ -33,7 +37,9 @@ const slides=[
         title: "Equipa tu oficina con productos de calidad profesional",
         description: "Papel, tóner, organizadores y todo el material que tu empresa necesita. Servicio de entrega y facturación incluido.",
         buttonText: "Solicitar Cotización",
+        buttonHref: "#contacto",
         buttonTwo: "Ver Productos",
+        buttonTwoHref: "#catalogo",
         imageURL: regresoClaseImg,
     },
 ]
@@ -70,8 +76,8 @@ function Slide(): ReactElement{
                         <div className="slideTitle">{slide.title}</div>
                         <div className="slideContent">{slide.description}</div>
                         <div className="slideButtons">
-                            <SlideBotton text={slide.buttonText} type="yellow" />
-                            <SlideBotton text={slide.buttonTwo} type="transparent" />
+                            <SlideBotton text={slide.buttonText} type="yellow" href={slide.buttonHref} />
+                            <SlideBotton text={slide.buttonTwo} type="transparent" href={slide.buttonTwoHref} />
                         </div>
                         <div className="businessInfoSlide">
                             <BusinessInfo numberString="2,000+" category="Productos" />

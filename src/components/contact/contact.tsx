@@ -15,7 +15,7 @@ const contactInfo=[
         key:2,
         icon: "bi bi-envelope",
         title: "Correo",
-        content: "ventas@megaprisma.com",
+        content: "gerencia@megaprisma.com.co",
         extraContent: "Respuesta en 24h"
     },
     {
@@ -23,7 +23,7 @@ const contactInfo=[
         icon: "bi bi-geo-alt",
         title: "Ubicación",
         content: "Chia, Cundinamarca",
-        extraContent: "Zona Industrial"
+        extraContent: ""
     }
 
 ]

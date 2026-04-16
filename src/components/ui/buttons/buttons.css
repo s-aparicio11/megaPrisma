@@ -16,6 +16,7 @@
 
 .yellow {
     display: inline-block;
+    text-decoration: none;
     background-color: #F2A53D;
     color: black;
     font-family: "Inter", system-ui, sans-serif;
@@ -28,6 +29,7 @@
 
 .transparent{
     display: inline-block;
+    text-decoration: none;
     background-color: #0034F4;
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.4);

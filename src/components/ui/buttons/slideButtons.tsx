@@ -2,13 +2,14 @@ import type { ReactElement } from "react";
 
 type slideBottonProp={
     text: string,
-    type: string
+    type: string,
+    href: string
 }
 
 function SlideBotton(slideBottonProp: slideBottonProp): ReactElement {
-    return <div className= {slideBottonProp.type}>
+    return <a href={slideBottonProp.href} className={slideBottonProp.type}>
         {slideBottonProp.text}
-    </div>
+    </a>
 }
 
 export default SlideBotton;
