@@ -13,7 +13,7 @@ const slides=[
         icon: "bi bi-backpack",
         badge:"Regreso a clases",
         title: "Prepárate con los mejores útiles escolares",
-        description: "Encuentra todo lo que necesitas para el nuevo año escolar: cuadernos, colores, mochilas y más con descuento especial.",
+        description: "Encuentra todo lo que necesitas para el nuevo año escolar: cuadernos, colores, y más con descuento especial.",
         buttonText: "Ver ofertas",
         buttonHref: "#promociones",
         buttonTwo: "Ver Catálogo",
